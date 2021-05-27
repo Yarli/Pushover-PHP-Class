@@ -5,7 +5,7 @@ Example using status feedback to check if the delivery worked
 ```php
 $p=new Pushover();
 if($p->sendMessage({
-	"user"    => " **Your User Key here** ",
+	"user"   	=> " **Your User Key here** ",
 	"title"		=> "Subject goes here",
 	"message"	=> "Your message goes here"
 })) {
@@ -19,7 +19,7 @@ Another example but without the error checking. aka blind send
 ```php
 $p=new Pushover();
 if($p->sendMessage({
-	"user"    => " **Your User Key here** ",
+	"user"    	=> " **Your User Key here** ",
 	"title"		=> "Subject goes here",
 	"message"	=> "Your message goes here"
 });
