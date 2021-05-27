@@ -2,25 +2,28 @@
 Pushover PHP class for sending Pushover messages via their API's
 
 Example using status feedback to check if the delivery worked
-   $p=new Pushover();
-   if($p->sendMessage({
-      "user"    => " **Your User Key here** ",
-			"title"		=> "Subject goes here",
-			"message"	=> "Your message goes here"
-    })) {
-      echo "Success";
-    }
-    else {
-      echo "Failed to send";
-    }
-  
+```php
+$p=new Pushover();
+if($p->sendMessage({
+	"user"    => " **Your User Key here** ",
+	"title"		=> "Subject goes here",
+	"message"	=> "Your message goes here"
+})) {
+	echo "Success";
+}
+else {
+	echo "Failed to send";
+}
+```
 Another example but without the error checking. aka blind send
-  $p=new Pushover();
-    if($p->sendMessage({
-      "user"    => " **Your User Key here** ",
-			"title"		=> "Subject goes here",
-			"message"	=> "Your message goes here"
-    })
+```php
+$p=new Pushover();
+if($p->sendMessage({
+	"user"    => " **Your User Key here** ",
+	"title"		=> "Subject goes here",
+	"message"	=> "Your message goes here"
+});
+```
   
 Returns true or false depending if the send was successful.
   
