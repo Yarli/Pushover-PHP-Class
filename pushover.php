@@ -1,6 +1,8 @@
 <?php
 /*
-  PHP Pushover API class
+  PHP Pushover API class for PHP
+  Written by Adam French (Yarli) 27/05/2021 and is licenced under the GNU GPL v3.0 licence
+  
   Example Usage.
     $p=new Pushover();
     if($p->sendMessage({
