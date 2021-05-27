@@ -3,6 +3,7 @@ Pushover PHP class for sending Pushover messages via their API's
 
 Example using status feedback to check if the delivery worked
 ```php
+include_once("pushover.php");
 $p=new Pushover();
 if($p->sendMessage({
 	"user"   	=> " **Your User Key here** ",
@@ -17,6 +18,7 @@ else {
 ```
 Another example but without the error checking. aka blind send
 ```php
+include_once("pushover.php");
 $p=new Pushover();
 if($p->sendMessage({
 	"user"    	=> " **Your User Key here** ",
