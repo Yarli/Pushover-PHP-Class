@@ -31,7 +31,7 @@ Returns true or false depending if the send was successful.
   
 Support all keys exposed by the Pushover API. For a complete list see: https://pushover.net/api
 A summary of those keys are as follows, which was adapted from https://pushover.net/api
-* **token** (required if you haven't put it in the head of the class below) - your application's API token
+* **token** (required if you haven't put it in the $Token variable in the class) - your application's API token
 * **user** (required) - the user/group key (not e-mail address) of your user (or you), viewable when logged into our dashboard (often referred to as USER_KEY in our documentation and code examples)
 * **message** (required) - your message
 
